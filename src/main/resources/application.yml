@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/flyway?useSSL=false&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+  flyway:
+    # 是否启用flyway
+    enabled: true
+    # 迁移sql脚本文件存放路径，默认db/migration
+    locations: classpath:db/migration
+    # 禁止flyway执行清理
+    clean-disabled: true
+    # 如果数据库中已经存在数据，从基线版本之前的脚本不再执行
+    baseline-on-migrate: true

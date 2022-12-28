@@ -1,0 +1,1 @@
+update `test_flyway_table` set catalog_name = '2021-09-23 17:48:48' where id =100;
